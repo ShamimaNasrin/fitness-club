@@ -1,7 +1,12 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css';
 
 const Cart = () => {
+
+    const notify = () => toast("Congratulation activity completed!");
+
     return (
         <div className='main-container'>
             <div className='person-info'>
@@ -66,9 +71,10 @@ const Cart = () => {
                 </div>     
             </div>
 
-            <button className='btn-add'>
-                <p className='btn-text'>Activity Completed</p>
+            <button onClick={notify} className='btn-add'>
+                <p id='activity-complete-btn' className='btn-text'>Activity Completed</p>
             </button>
+            <ToastContainer />
         </div>
     );
 };
