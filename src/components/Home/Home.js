@@ -16,7 +16,7 @@ const Home = () => {
             .then(data => setWorkoutNames(data))
     }, []);
 
-    const handleAddToCart = (workoutName) =>{
+    const handleAddToCart = (workoutName) => {
         console.log(workoutName);
         const newCart = [...cart, workoutName];
         setCart(newCart);
@@ -27,11 +27,11 @@ const Home = () => {
         <div className='home-container'>
             <div className='gym-item'>
                 <div className='title-container'>
-                <div className='gym-title'>
-                    <img src={logo} alt="" />
-                    <p className='title-p'>FITNESS-CLUB</p>
-                </div>
-                <h3>Pick any workout catagory and get start</h3>
+                    <div className='gym-title'>
+                        <img src={logo} alt="" />
+                        <p className='title-p'>FITNESS-CLUB</p>
+                    </div>
+                    <h3>Pick any workout catagory and get start</h3>
                 </div>
                 <div className='exercises-container'>
                     {

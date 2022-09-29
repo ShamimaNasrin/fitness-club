@@ -6,13 +6,23 @@ import './Cart.css';
 
 const Cart = ({ cart }) => {
     //console.log(cart);
-    // const [breakTime, setBreakTime] = useState[0];
+    const [breakDuration, setBreakDuration] = useState(0);
 
-    // useEffect( ()=> {
-    //     const localstorageData = localStorage.getItem('')
-    //     //console.log(localstorageData)
-    //     setBreakTime(localstorageData);
-    // }, [])
+    useEffect(() => {
+        const storedDuration = localStorage.getItem("break_duration");
+        if (storedDuration) {
+            setBreakDuration(storedDuration);
+        }
+    }, [])
+
+    const addToList = (duration) => {
+
+        localStorage.setItem("break_duration", duration);
+
+
+        setBreakDuration(duration);
+
+    }
 
     //toast function
     const notify = () => toast("Congratulation activity completed!");
@@ -22,49 +32,6 @@ const Cart = ({ cart }) => {
     for (const exsercise of cart) {
         totalTime = totalTime + exsercise.time;
     }
- 
-    const addToList = (id) => {
-
-        if (id === 1) {
-            //addToDb(1,10);
-            localStorage.setItem(1, 10);
-            const first1 = document.getElementById('breck');
-            first1.innerText = 10;
-
-
-        }
-        else if (id === 2) {
-
-            localStorage.setItem(2, 20);
-            const first1 = document.getElementById('breck');
-            first1.innerText = 20;
-
-        }
-        else if (id === 3) {
-            
-            localStorage.setItem(3, 30);
-            const first1 = document.getElementById('breck');
-            first1.innerText = 30;
-
-        }
-        else if (id === 4) {
-           
-            localStorage.setItem(4, 40);
-            const first1 = document.getElementById('breck');
-            first1.innerText = 40;
-
-        }
-        let quantity = localStorage.getItem(id);
-        console.log(quantity);
-        
-
-       // console.log(quantity);
-        //return quantity;
-    }
-   
-
-
-
 
     return (
         <div className='main-container'>
@@ -89,22 +56,22 @@ const Cart = ({ cart }) => {
             <h3>Add A Break</h3>
             <div className="card flex-center">
                 <div className="">
-                    <button id='first' onClick={() => addToList(1)} className='radius'>
+                    <button id='first' onClick={() => addToList(10)} className='radius' type='button'>
                         <p className='margin'><small>10s</small></p>
                     </button>
                 </div>
                 <div className="">
-                    <button id='second' onClick={() => addToList(2)} className='radius'>
+                    <button id='second' onClick={() => addToList(20)} className='radius' type='button'>
                         <p className='margin'><small>20s</small></p>
                     </button>
                 </div>
                 <div className="">
-                    <button id='third' onClick={() => addToList(3)} className='radius'>
+                    <button id='third' onClick={() => addToList(30)} className='radius' type='button'>
                         <p className='margin'><small>30s</small></p>
                     </button>
                 </div>
                 <div className="">
-                    <button id='four' onClick={() => addToList(4)} className='radius'>
+                    <button id='four' onClick={() => addToList(40)} className='radius' type='button'>
                         <p className='margin'><small>40s</small></p>
                     </button>
                 </div>
@@ -126,7 +93,7 @@ const Cart = ({ cart }) => {
                     <h3 className='custom-h'>Break time</h3>
                 </div>
                 <div>
-                    <p className='margin text-gray'> <small id='breck'>00</small> s</p>
+                    <p className='margin text-gray'> {breakDuration}s</p>
                 </div>
             </div>
 

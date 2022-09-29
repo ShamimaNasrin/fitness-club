@@ -1,58 +1,66 @@
-.home-container{
-    display: grid;
-    grid-template-columns: 4fr 1fr;  
-  }
-  .gym-item{
-    margin: 80px 50px;
-  }
-  .exercises-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 47px;
-    justify-items: center;
-  }
-  .cart-container{
-    background-color: #f2f4f9;
-  }
+.home-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
 
-  /* gym title and logo */
-  .title-container{
-    margin-bottom: 20px;
-  }
-  .title-container h3{
-    margin: 10px 10px 24px;
-  }
-  .gym-title{
-    width: 230px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.gym-item {
+  margin: 80px 50px;
 }
-.gym-title img{
-    width: 50px;
+
+.exercises-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 47px;
+  justify-items: center;
 }
-.title-p{
-    font-size: 25px;
-    font-weight: 700;
-    margin: 0;
+
+.cart-container {
+  background-color: #f2f4f9;
+}
+
+/* gym title and logo */
+.title-container {
+  margin-bottom: 20px;
+}
+
+.title-container h3 {
+  margin: 10px 10px 24px;
+}
+
+.gym-title {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gym-title img {
+  width: 50px;
+}
+
+.title-p {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
 }
 
 /* Responsiveness for tablet */
-  @media screen and (min-width: 690px) and (max-width:1133px) {
-    .exercises-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (min-width: 690px) and (max-width:1133px) {
+  .exercises-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsiveness for mobile */
+@media screen and (max-width:689px) {
+  .exercises-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  /* Responsiveness for mobile */
-  @media screen and (max-width:689px) {
-    .exercises-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .home-container{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto, auto);  
-    }
-
+  .home-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, auto);
   }
+
+}
