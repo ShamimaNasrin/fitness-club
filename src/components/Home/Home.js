@@ -8,13 +8,19 @@ import Blog from '../Blog/Blog';
 const Home = () => {
 
     const [workoutNames, setWorkoutNames] = useState([]);
-    // const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setWorkoutNames(data))
     }, []);
+
+    const handleAddToCart = (workoutName) =>{
+        console.log(workoutName);
+        const newCart = [...cart, workoutName];
+        setCart(newCart);
+    }
 
 
     return (
@@ -32,13 +38,14 @@ const Home = () => {
                         workoutNames.map(workoutName => <Exsercises
                             key={workoutName.id}
                             workoutName={workoutName}
+                            handleAddToCart={handleAddToCart}
                         ></Exsercises>)
                     }
                 </div>
                 <Blog></Blog>
             </div>
             <div className='cart-container'>
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );

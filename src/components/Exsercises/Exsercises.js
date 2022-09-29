@@ -4,7 +4,8 @@ import './Exsercises.css';
 
 const Exsercises = (props) => {
     //console.log(props.workoutName);
-    const { name, details, age, time, img } = props.workoutName;
+    const {workoutName, handleAddToCart} = props;
+    const { name, details, age, time, img } = workoutName;
     return (
         <div className='workout'>
             <div className="card">
@@ -14,8 +15,9 @@ const Exsercises = (props) => {
                     <p className='workout-details'>{details}</p>
                     <p>For age: {age}</p>
                     <p>Time required: {time}s</p>
+
                     <div className='btn-div'>
-                    <button className='btn-add'>
+                    <button onClick={() => handleAddToCart(workoutName)} className='btn-add'>
                         <p className='btn-text'>Add activity</p>
                     </button>
                     </div>

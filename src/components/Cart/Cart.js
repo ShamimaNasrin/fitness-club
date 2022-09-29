@@ -3,9 +3,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Cart.css';
 
-const Cart = () => {
+const Cart = ({cart}) => {
+    console.log(cart);
 
+    //toast function
     const notify = () => toast("Congratulation activity completed!");
+
+    //add total exsercice time
+    let totalTime = 0;
+    for(const exsercise of cart){
+        
+        totalTime = totalTime + exsercise.time;
+        
+    }
 
     return (
         <div className='main-container'>
@@ -58,13 +68,13 @@ const Cart = () => {
                     <h3 className='custom-h'>Exercise time</h3> 
                 </div>
                 <div>
-                    <p className='margin text-gray'>00s</p>
+                    <p className='margin text-gray'>{totalTime}s</p>
                 </div>     
             </div>
 
             <div className="card flex-between">
                 <div>
-                    <h3 className='custom-h'>Exercise time</h3> 
+                    <h3 className='custom-h'>Break time</h3> 
                 </div>
                 <div>
                     <p className='margin text-gray'>00s</p>

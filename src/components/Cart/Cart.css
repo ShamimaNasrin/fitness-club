@@ -1,37 +1,43 @@
-.main-container{
+.main-container {
+    position: sticky;
+    top: 0;
     margin: 0;
     padding: 25px;
 }
-.person-info{
 
-}
-.location-p{
+.location-p {
     color: gray;
     margin-top: 0;
 }
-.text-gray{
-    color: gray; 
+
+.text-gray {
+    color: gray;
 }
-.person-info h2{
+
+.person-info h2 {
     margin-bottom: 5px;
 }
-.card{
+
+.card {
     background-color: white;
     border-radius: 8px;
     margin: 13px 0px;
     padding: 10px;
 }
-.flex-center{
+
+.flex-center {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.flex-between{
+
+.flex-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.mini{
+
+.mini {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -39,40 +45,47 @@
     align-items: center;
     /* border: 2px solid black; */
 }
-.mini h4,p{
+
+.mini h4,
+p {
     margin: 0;
 }
 
-.radius{
+.radius {
     padding: 5px;
     background-color: #f2f4f9;
     border-radius: 5px;
     border: none;
 }
-.radius:hover{
+
+.radius:hover {
     color: white;
     background-color: rgb(71, 71, 71);
 }
-.custom-h{
+
+.custom-h {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 500;
 }
-.details-h{
+
+.details-h {
     margin-top: 40px;
 }
-.btn-add{
+
+.btn-add {
     width: 100%;
     padding: 10px 5px;
     color: white;
     background: rgb(71, 71, 71);
     border: none;
     border-radius: 8px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btn-text{
+
+.btn-text {
     margin-top: 0;
 }
