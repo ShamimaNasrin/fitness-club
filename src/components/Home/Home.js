@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
-import Exsercises from '../Exsercises/Exsercises';
+import Exercises from '../Exercises/Exercises';
 import logo from '../../images/logo.png';
 import './Home.css';
 import Blog from '../Blog/Blog';
@@ -33,13 +33,13 @@ const Home = () => {
                 </div>
                 <h3>Pick any workout catagory and get start</h3>
                 </div>
-                <div className='exsercises-container'>
+                <div className='exercises-container'>
                     {
-                        workoutNames.map(workoutName => <Exsercises
+                        workoutNames.map(workoutName => <Exercises
                             key={workoutName.id}
                             workoutName={workoutName}
                             handleAddToCart={handleAddToCart}
-                        ></Exsercises>)
+                        ></Exercises>)
                     }
                 </div>
                 <Blog></Blog>

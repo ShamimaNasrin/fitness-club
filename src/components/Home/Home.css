@@ -5,7 +5,7 @@
   .gym-item{
     margin: 80px 50px;
   }
-  .exsercises-container{
+  .exercises-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 47px;
@@ -39,14 +39,14 @@
 
 /* Responsiveness for tablet */
   @media screen and (min-width: 690px) and (max-width:1133px) {
-    .exsercises-container{
+    .exercises-container{
         grid-template-columns: repeat(2, 1fr);
     }
   }
 
   /* Responsiveness for mobile */
   @media screen and (max-width:689px) {
-    .exsercises-container{
+    .exercises-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .home-container{

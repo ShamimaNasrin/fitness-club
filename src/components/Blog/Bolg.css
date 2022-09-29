@@ -24,8 +24,9 @@ h1{
     flex-direction: column;
 }
 .blog-p{
-    font-size: 17px;
+    font-size: 14px;
     padding: 0px 10px 20px;
+    font-weight: 300;
 }
 
 /* Responsiveness for mobile */

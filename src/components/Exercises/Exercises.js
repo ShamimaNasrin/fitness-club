@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Exsercises.css';
+import './Exercises.css';
 
 const Exsercises = (props) => {
     //console.log(props.workoutName);
