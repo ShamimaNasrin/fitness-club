@@ -1,0 +1,14 @@
+.main-container{
+    margin: 0;
+    padding: 25px;
+}
+.person-info{
+
+}
+.location-p{
+    color: gray;
+    margin-top: 0;
+}
+.person-info h2{
+    margin-bottom: 5px;
+}

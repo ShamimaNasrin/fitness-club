@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import Exsercises from '../Exsercises/Exsercises';
 import logo from '../../images/logo.png';
 import './Home.css';
+import Blog from '../Blog/Blog';
 
 const Home = () => {
 
@@ -34,6 +35,7 @@ const Home = () => {
                         ></Exsercises>)
                     }
                 </div>
+                <Blog></Blog>
             </div>
             <div className='cart-container'>
                 <Cart></Cart>
