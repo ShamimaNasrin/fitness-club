@@ -1,15 +1,18 @@
 .workout{
-    width: 300px;
-    height: 510px;
+    height: 500px;
     border-radius: 8px;
-    position: relative;
     box-shadow: 1px 7px 8px 8px rgba(183, 183, 183, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    padding: 15px;
 }
 .workout img{
-    width: 286px;
-    height: 286px;
+    width: 100%;
     border-radius: 8px;
-    margin: 7px;
 }
 .workout-info{
     margin: 0 14px;
@@ -21,25 +24,41 @@
 .workout-name{
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 21px;
-    line-height: 25px;
-    margin-top: 7px;
+    margin-bottom: 15px;
+    margin-top: 9px;
+}
+.workout-details{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+.btn-div{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    margin: 10px auto 0px auto;
+
 }
 .btn-add{
     width: 100%;
-    background: #FFE0B3;
+    padding: 10px 5px;
+    color: white;
+    background: rgb(71, 71, 71);
     border: none;
-    border-radius: 0px 0px 8px 8px;
-    position: absolute;
-    bottom: 0;
+    border-radius: 8px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.btn-add .btn-text{
-    margin-right: 5px;
+.btn-text{
+    margin-top: 0;
 }
-.btn-addt:hover{
-    background-color: orange;
+.btn-add:hover{
+    background-color: rgb(47, 47, 47);
 }
