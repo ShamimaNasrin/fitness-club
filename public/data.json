@@ -1,0 +1,50 @@
+[
+    {
+      "id": "1",
+      "name": "Push-ups",
+      "details": "It's one of the most effective and common do-at-home exercise ever. It's quite simple to do.It basically strengthens your upper body as it's beneficial for chest, shoulders and triceps.",
+      "age": "20-25",
+      "time": 20,
+      "img": "https://images.pexels.com/photos/8472148/pexels-photo-8472148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": "2",
+        "name": "Squats",
+        "details": "Squat is most effective exercise to tone your thighs, hips and butts. There are many variations in squatting exercise. Squats do improve your overall health by boosting digestion and blood circulation.",
+        "age": "18-25",
+        "time": 40,
+        "img": "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvNDAxLW1qLTIxYTM1MDMuanBn.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Plank",
+        "details": "Plank exercise puts your entire body on work. It's most vital for abdominals. Get down on the floor on your elbows and toes. Elbows should bent and directly below your shoulders.",
+        "age": "20-27",
+        "time": 30,
+        "img": "https://images.pexels.com/photos/2247179/pexels-photo-2247179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "id": "4",
+        "name": "Crunches",
+        "details": "It's a traditional exercise for stronger abs. Lie flat on your back, knees bent with feet flat on the floor. Keep the feet apart. Hands to be kept at the base of your head with elbows pointed out.",
+        "age": "18-23",
+        "time": 25,
+        "img": "https://images.pexels.com/photos/4971061/pexels-photo-4971061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "id": "5",
+        "name": "Jogging",
+        "details": "Jogging is a form of trotting or running at a slow or leisurely pace. The main intention is to increase physical fitness with less stress on the body than from faster running but more than walking. ",
+        "age": "25-30",
+        "time": 15,
+        "img": "https://images.pexels.com/photos/3621185/pexels-photo-3621185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+        "id": "6",
+        "name": "Yoga",
+        "details": "Yoga as exercise is a physical activity consisting mainly of postures, often connected by flowing sequences, sometimes accompanied by breathing exercises, and frequently ending with relaxation or meditation. ",
+        "age": "20-27",
+        "time": 30,
+        "img": "https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvMzg4LW1qLTM4MzQuanBn.jpg"
+      }
+]    
