@@ -1,0 +1,36 @@
+.home-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;  
+  }
+  .exsercises-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 47px;
+    margin: 100px 50px;
+    justify-items: center;
+  }
+  .cart-container{
+    background-color: #f2f4f9;
+  }
+
+  /* gym title and logo */
+  .gym-title{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gym-title img{
+    width: 50px;
+}
+.title-p{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+  @media screen and (max-width:1100px) {
+    .exsercises-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
