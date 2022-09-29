@@ -8,6 +8,67 @@ const Cart = () => {
                 <h2>Angelina Jolie</h2>
                 <p className='location-p'>Los Angeles</p>
             </div>
+            <div className="card flex-center">
+                <div className="mini">
+                    <h4>60kg</h4>
+                    <p className='margin'><small className='text-gray'>Weight</small></p>
+                </div>
+                <div className="mini">
+                    <h4>5.7</h4>
+                    <p className='margin'><small className='text-gray'>Height</small></p>
+                </div>
+                <div className="mini">
+                    <h4>30y</h4>
+                    <p className='margin'><small className='text-gray'>Age</small></p>
+                </div>
+            </div>
+            <h3>Add A Break</h3>
+            <div className="card flex-center">
+            <div className="">
+                    <button className='radius'>
+                    <p className='margin'><small>10s</small></p>
+                    </button>
+                </div>
+                <div className="">
+                    <button className='radius'>
+                    <p className='margin'><small>20s</small></p>
+                    </button>
+                </div>
+                <div className="">
+                    <button className='radius'>
+                    <p className='margin'><small>30s</small></p>
+                    </button>
+                </div>
+                <div className="">
+                    <button className='radius'>
+                    <p className='margin'><small>40s</small></p>
+                    </button>
+                </div>
+            </div>
+
+            <h3 className='details-h'>Exercise Details</h3>
+
+            <div className="card flex-between">
+                <div>
+                    <h3 className='custom-h'>Exercise time</h3> 
+                </div>
+                <div>
+                    <p className='margin text-gray'>00s</p>
+                </div>     
+            </div>
+
+            <div className="card flex-between">
+                <div>
+                    <h3 className='custom-h'>Exercise time</h3> 
+                </div>
+                <div>
+                    <p className='margin text-gray'>00s</p>
+                </div>     
+            </div>
+
+            <button className='btn-add'>
+                <p className='btn-text'>Activity Completed</p>
+            </button>
         </div>
     );
 };
