@@ -2,11 +2,13 @@
     display: grid;
     grid-template-columns: 4fr 1fr;  
   }
+  .gym-item{
+    margin: 80px 50px;
+  }
   .exsercises-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 47px;
-    margin: 100px 50px;
     justify-items: center;
   }
   .cart-container{
@@ -14,6 +16,12 @@
   }
 
   /* gym title and logo */
+  .title-container{
+    margin-bottom: 20px;
+  }
+  .title-container h3{
+    margin: 10px 10px 24px;
+  }
   .gym-title{
     width: 230px;
     display: flex;
@@ -26,11 +34,25 @@
 .title-p{
     font-size: 25px;
     font-weight: 700;
+    margin: 0;
 }
 
-
-  @media screen and (max-width:1100px) {
+/* Responsiveness for tablet */
+  @media screen and (min-width: 690px) and (max-width:1133px) {
     .exsercises-container{
         grid-template-columns: repeat(2, 1fr);
     }
+  }
+
+  /* Responsiveness for mobile */
+  @media screen and (max-width:689px) {
+    .exsercises-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, auto);  
+    }
+
   }
